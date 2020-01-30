@@ -29,7 +29,7 @@ module.exports = {
       directory: './data/seeds',
     },
   },
-};
+
 
   staging: {
     client: 'postgresql',

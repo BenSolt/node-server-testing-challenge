@@ -26,6 +26,18 @@ describe('server', function() {
             })
         })
 
+////////////////FAILING/////////////////////
+        it('should return master', function() {
+            //make a  GET request to /
+            return request(server).get('/char')
+            .then(res =>{
+            //check that the match = to json not html, (text related)
+            expect(res.type).toMatch(/master/i);
+            })
+        })
+
+
+
         it('should return info from body', function() {
             //make a  GET request to /
             return request(server).get('/')
