@@ -2,7 +2,7 @@ const request = require('supertest');
 const server = require('./server');
 
 describe('server', function() {
-    it('runs  test', function() {
+    it('runs the tests', function() {
         //to pass change 2nd one to true also, or both to false.
         expect(true).toBe(true);
     })
@@ -37,3 +37,6 @@ describe('server', function() {
         })
 
     })
+    
+
+})
